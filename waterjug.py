@@ -59,9 +59,21 @@ while(s!=g1 and s!=g2):
 
 if(c1<c2):
     print('if water is poured from large jar to small jar:')
-    print(l1)
+    for i in l1:
+        j1.append(i[0])
+        j2.append(i[1])
+    print("jar1   jar2")
+    for i in range(len(j1)):
+        print(" ",j1[i],"     ",j2[i])
     print('nuber of steps required to reach goal state ',c1-1)
 else:
     print('if water is poured from smaller jug to larger jug:')
-    print(l2)
+    for i in l2:
+        j1.append(i[0])
+        j2.append(i[1])
+    print("jar1   jar2")
+    for i in range(len(j1)):
+        print(" ",j1[i],"     ",j2[i])
     print('nuber of steps required to reach goal state is ',c2-1)
+
+
